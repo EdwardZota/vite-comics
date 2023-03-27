@@ -57,7 +57,9 @@ export default {
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/partials/mixins";
+
     footer{
         background-image: url('/footer-bg.jpg');
         background-size: cover;
@@ -68,14 +70,11 @@ export default {
     }
 
     nav{
-        width: 1300px;
-        margin: auto;
+        @include mixins.width-m-auto;
         padding: 35px 0;
         position: relative;
     }
-    ul{
-        list-style: none;
-    }
+    
     ul:nth-child(1n+3){
         position: absolute;
         top: 36px;

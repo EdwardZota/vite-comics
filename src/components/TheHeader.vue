@@ -72,6 +72,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../styles/partials/variables.scss";
+@use "../styles/partials/mixins";
 
 header {
   background-color: variables.$color-navbar-bg;
@@ -79,20 +80,15 @@ header {
 }
 
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1300px;
-    margin: auto;
+    @include mixins.d-flex-space-between;
+    @include mixins.width-m-auto;
 }
 
 ul{
     display: flex;
-    li{
-    list-style: none;
-    &:hover a{
+    li:hover a{
         color: variables.$color-primary;
-    }
+    
     }
     a{
     color: black;
@@ -100,7 +96,6 @@ ul{
     padding: 0 12px;
 
 }}
-
 
 
 </style>

@@ -55,6 +55,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../styles/partials/variables";
+@use "../styles/partials/mixins";
 
     .container{
         background-color: #303030;
@@ -62,11 +63,8 @@ export default {
     }
 
     .box{
-        width: 1300px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.width-m-auto;
+        @include mixins.d-flex-space-between;
         padding: 30px 0;
     }
     h3{
@@ -78,7 +76,6 @@ export default {
         align-items: center;
     }
     li{
-        list-style: none;
         padding: 15px;
     }
 

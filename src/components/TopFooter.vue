@@ -52,28 +52,23 @@
 
 <style scoped lang="scss">
 @use "../styles/partials/variables";
+@use "../styles/partials/mixins";
     .container{
         background-color: variables.$color-primary;
         height: 200px;
         width: 100%;
     }
 
-    .box{
-        width: 1300px;
-        margin: auto;
+    .box{    
+        @include mixins.width-m-auto;
         height: 100%;
     }
 
     ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.d-flex-space-between;
         height: 100%;
     }
-    li{
-        list-style: none;
-        flex-grow: 1;
-    }
+    
     a{
         text-decoration: none;
         color: white;

@@ -1,0 +1,10 @@
+@mixin d-flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin width-m-auto{
+    width: 1300px;
+    margin:auto;
+}
