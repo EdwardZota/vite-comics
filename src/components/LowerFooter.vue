@@ -28,7 +28,7 @@ export default {
                     href:"#pinterest",
                     img:"/footer-pinterest.png",
                     name:"pinterest"
-                },
+                }
             ]
         }
     }

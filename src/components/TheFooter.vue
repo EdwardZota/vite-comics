@@ -1,11 +1,13 @@
 <script>
 
 import LowerFooter from './LowerFooter.vue';
+import TopFooter from './TopFooter.vue';
 
 export default {
     name:"TheFooter",
     components:{
-      LowerFooter
+      LowerFooter,
+      TopFooter
     },
     data(){
         return{
@@ -33,6 +35,8 @@ export default {
 </script>
 
 <template>
+
+    <TopFooter/>
     <footer>
         <nav>
             <ul v-for="(section,index) in listFooter" :key="index">
