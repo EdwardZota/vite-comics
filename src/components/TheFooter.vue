@@ -38,9 +38,9 @@ export default {
 
     <TopFooter/>
     <footer>
-        <nav>
-            <ul v-for="(section,index) in listFooter" :key="index">
-                <li >
+        <nav class="box">
+            <ul v-for="(section,index) in listFooter" :key="index" class="section">
+                <li>
                     <h3>{{ section.title.toUpperCase() }}</h3>
                     <ul>
                         <li v-for="(link,index) in section.links" :key="index">
@@ -73,17 +73,15 @@ export default {
         @include mixins.width-m-auto;
         padding: 35px 0;
         position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
-    
-    ul:nth-child(1n+3){
-        position: absolute;
-        top: 36px;
-        left: 190px;
-    }
-    
-    ul:nth-last-child(1){
-        top: 36px;
-        left: 350px;
+
+    .section{
+        padding-right: 40px;
     }
 
     h3{
