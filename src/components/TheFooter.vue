@@ -1,6 +1,12 @@
 <script>
+
+import LowerFooter from './LowerFooter.vue';
+
 export default {
     name:"TheFooter",
+    components:{
+      LowerFooter
+    },
     data(){
         return{
             listFooter:[
@@ -42,6 +48,8 @@ export default {
         </nav>
         <img src="/dc-logo-bg.png" alt="Logo DC">
     </footer>
+
+    <LowerFooter/>
 
 </template>
 
