@@ -1,11 +1,13 @@
 <script>
   import TheHeader from './components/TheHeader.vue';
   import TheFooter from './components/TheFooter.vue';
+  import ListSeries from './components/ListSeries.vue';
 
   export default {
     components:{
       TheHeader,
-      TheFooter
+      TheFooter,
+      ListSeries
     }
   }
 </script>
@@ -13,9 +15,7 @@
 <template>
   <TheHeader />
 
-  <main>
-    <span>contents goes here!</span>
-  </main>
+  <ListSeries />
 
   <TheFooter/>
 
