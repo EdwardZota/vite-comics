@@ -103,5 +103,20 @@ img {
     top: -80px;
     right: 280px;
     height: 700px;
+    &:hover{
+        animation: rotate 1s infinite linear;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    50% {
+        filter: invert(1);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
 }
 </style>
